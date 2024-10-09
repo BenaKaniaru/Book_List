@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0px;
+  row-gap: 20px;
+  background-color: lightgrey;
+}
+
+h1 {
+  font-weight: lighter;
+}
+
+.search-input input {
+  padding: 5px 8px;
+  width: 200px;
+  border-radius: 5px;
+  border: solid 1px black;
+  margin: 0;
+  border-right: none;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+@media screen and (min-width: 700px) {
+  .search-input input {
+    width: 300px;
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+}
+
+input:focus {
+  outline: none;
+  border: solid 1px grey;
+}
+
+.search-input button {
+  padding: 5.5px 10px;
+  border: none;
+  border-radius: 5px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background-color: purple;
+  color: white;
+  margin-left: -4px;
+
+}
+
+@media screen and (min-width: 700px) {
+  .search-input button {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+}
+
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  
+}
+
+h3 {
+  font-weight: lighter;          
+  padding: 15px 0;
+}
+
+.books-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  padding: 0px 30px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 700px) {
+  .book-item {
+  width: 600px;
+  }
+}
+
+.book-item:hover {
+  .selection-indicator {
+    width: 4px;
+    height: 40px;
+    background-color: purple;
+  }
+}
+
+.book-item p {
+  flex: 1;
+  text-align: left;
+  font-size: 4vw;
+}
+
+@media screen and (min-width: 700px) {
+  .book-item p {
+    flex: 1;
+    text-align: left;
+    font-size: 20px;
+  }
+}
+
+.empty-text {
+  color: purple;
+  font-size: 4vw;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 700px) {
+  .empty-text {
+    color: purple;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+
+.book-item button {
+  margin-left: 30px;                
+  background-color: red;
+  border: none;
+  border-radius: 2px;
+  padding: 5px 20px;
+  color: white;
+  font-size: 4vw;
+}
+
+@media screen and (min-width: 700px) {
+  .book-item button {
+    padding: 5px 30px;
+    font-size: 17px;
+  }
+}
+
+
+button:hover {
+  opacity: 0.8;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.selection-indicator {
+  width: 4px;
+  height: 40px;
+  margin-right: 50px;
+  background-color: rgb(201, 201, 201);
+}
+
+.add-book {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-book input {
+  width: 200px;
+  padding: 5px 8px;
+  border: solid 1px black;
+  border-right: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+@media screen and (min-width: 700px) {
+  .add-book input {
+    width: 300px;
+    padding: 8px 10px;
+    font-size: 18px;
+  }
+}
+
+.add-book button {
+  padding: 5.5px 20px;
+  border: none;
+  border-radius: 5px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background-color: green;
+  color: white;
+}
+
+@media screen and (min-width: 700px) {
+  .add-book button {
+    padding: 12px 30px;
+  }
+}
+
+::placeholder {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 700px) {
+  ::placeholder {
+    font-size: 18px;
+  }
+}
+
+
+
